@@ -229,7 +229,7 @@ pre {
   padding: 0;
 }
 
-.steps a {
+.steps a, .darkMode {
   color: #0e101c;
   text-decoration: none;
   font-size: 14px;

@@ -5,11 +5,19 @@ import PlantList from "./components/PlantList";
 import ShoppingCart from "./components/ShoppingCart";
 import CheckoutForm from "./components/CheckoutForm";
 
+import { useDarkMode } from "./hooks/useDarkMode";
+
+
 import "./App.css";
 
 function App() {
   // array of plants that have been added to the cart
   const [cart, setCart] = useState([]);
+
+//setter for dark mode
+const [darkMode, setDarkMode] = useDarkMode('darkMode', true);
+  
+
 
   // add a plant to the cart
   const addToCart = (plant) => {
@@ -26,9 +34,12 @@ function App() {
       <Router>
         <nav className="container">
           <h1>
-            React Plants <span role="img">🌿</span>
+          React Plants <span role="img" aria-label="leaf emoji">🌿</span>
           </h1>
           <ul className="steps">
+            <li>
+              <span class="darkMode">DarkMode?</span>
+            </li>
             <li>
               <NavLink exact to="/">
                 Plants
