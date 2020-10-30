@@ -5,6 +5,11 @@ body {
     sans-serif;
 }
 
+.dark {
+  background: wheat;
+  color: #333;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -20,6 +25,7 @@ h1 {
   text-align: center;
   font-size: 2rem;
 }
+
 
 .cart-badge {
   position: absolute;

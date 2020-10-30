@@ -30,7 +30,7 @@ const [darkMode, setDarkMode] = useDarkMode('darkMode', true);
   };
 
   return (
-    <div>
+    <div className={darkMode ? "App" : "dark App"}>
       <Router>
         <nav className="container">
           <h1>
